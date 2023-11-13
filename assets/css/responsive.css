@@ -1,0 +1,298 @@
+@media (max-width: 376px) {
+    #nav .nav-bar {
+        display: flex;
+        flex-direction: column;
+        background-color: var(--dark-violet);
+        width: 85%;
+        position: absolute;
+        left: 7.5%;
+        margin-top: 52px;
+        border-radius: 10px;
+    }
+
+    #nav .nav-bar ul {
+        display: flex;
+        flex-direction: column;
+        padding: 20px 0;
+        border-bottom: grey solid 0.5px;
+        margin: 0 20px;
+    }
+
+    #nav ul li {
+        text-align: center;
+        padding: 14px;
+    }
+    
+    #nav ul li a {
+        color: white;
+        font-size: 16px;
+    }
+
+    #nav {
+        width: 90%;
+    }
+
+    #nav .nav-logo {
+        margin-left: 5px;
+    }
+
+    #nav .menu-container {
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+    }
+
+
+    #nav .nav-menu {
+        display: block;
+        font-size: 28px;
+        color: var(--grey);
+        text-align: right;
+    }
+
+    #nav .register-box {
+        display: flex;
+        flex-direction: column;
+        padding: 10px 0 16px;
+    }
+
+    #nav .register-box .login, #nav .register-box .sign-up {
+        text-align: center;
+        margin: 14px;
+        color: white;
+        font-size: 16px;
+    }
+
+    #introduction-container {
+        flex-direction: column-reverse;
+        align-items: center;
+        margin-top: 20px;
+        width: 90%;
+    }
+
+    #introduction-container .introduction {
+        margin-top: 40px;
+        align-items: center;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    #introduction-container .intro-heading {
+        font-size: 40px;
+        letter-spacing: -1px;
+        text-align: center;
+    }
+
+    #introduction-container .working-img {
+        margin-left: 0;
+        width: 482px;
+        margin-right: -150px;
+    }
+
+    #introduction-container .intro-subheading {
+        text-align: center;
+        font-size: 18px;
+        padding: 0px 24px;
+        margin-top: 16px;
+    }
+
+    .start-btn {
+        padding: 13px 0;
+        margin-top: -14px;
+        width: 182px;
+    }
+
+    #shorten-link {
+        width: 90%;
+    }
+
+    #shorten-link .shorten-form {
+        background-image: url("../images/bg-shorten-mobile.svg");
+        width: 100%;
+        padding: 20px 0px !important;
+    }
+
+    #shorten-link form {
+        text-align: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #shorten-link .input-box {
+        width: 100%;
+        align-items: center;
+    }
+
+    #shorten-link .error-message {
+        text-align: left;
+        font-size: 13px;
+    }
+
+    #shorten-link .shorten-input {
+        padding-left: 16px;
+        padding-top: 12px;
+        padding-bottom: 12px;
+        width: 90%;
+        font-size: 16px;
+    }
+
+    #shorten-link .shorten-submit {
+        margin-left: 0px;
+        margin-top: 16px;
+        width: 90%;
+        height: 51px;
+    }
+
+    #shorten-link .copy-link {
+        flex-direction: column;
+        width: 100%;
+        padding: 0;
+    }
+
+    #shorten-link .original-link {
+        width: 100%;
+        padding: 14px 20px;
+        border-bottom: var(--grey) solid 1px;
+        /* position: absolute; */
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+
+    #shorten-link .link-and-copy {
+        flex-direction: column;
+        width: 100%;
+        align-items: start;
+        padding: 14px 20px 20px;
+        /* margin-top: 56px; */
+    }
+    
+    #shorten-link .shortened-link {
+        width: 100%;
+        margin-right: 0;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+
+    .copy-link .copy-btn {
+        width: 100%;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    #advanced-statistics {
+        margin-bottom: 80px;
+    }
+
+    #advanced-statistics .as-heading {
+        text-align: center;
+        font-size: 28px;
+        margin-top: 10px;
+    }
+    
+    #advanced-statistics .as-subheading {
+        font-size: 16px;
+        max-width: 300px;
+    }
+
+    #advanced-statistics .stat-box {
+        flex-direction: column;
+        align-items: center;
+        width: 90%;
+        margin-top: 160px;
+    }
+    
+    #advanced-statistics .stat-container {
+        width: 100%;
+        height: auto;
+    }
+
+    #advanced-statistics .linking-bar {
+        transform: rotate(90deg);
+        margin-right: -3px;
+        width: 334px;
+    }
+
+    .none-display {
+        display: none;
+    }
+
+    #advanced-statistics .stat-des {
+        margin: -77px 0 0 0 !important;
+        padding: 20px;
+    }
+
+    #advanced-statistics .stat-icon {
+        left: 50%;
+        transform: translate(-50%, -50%);
+        margin-top: -20px;
+    }
+
+    #advanced-statistics .stat-heading {
+        text-align: center;
+        margin-top: 52px;
+        font-size: 21px;
+    }
+
+    #advanced-statistics .stat-title {
+        text-align: center;
+        letter-spacing: -0.5px;
+    }
+
+    #boost-links {
+        height: 280px;
+        background-image: url("../images/bg-boost-mobile.svg");
+    }
+
+    #boost-links .bl-heading {
+        font-size: 26px;
+    }
+
+    #boost-links .start-btn {
+        margin-top: 0;
+    }
+    
+    
+    #footer {
+        flex-direction: column;
+        align-items: center;
+        height: 760px;
+        padding-top: 50px;
+    }
+
+    #footer .footer-logo {
+        margin-right: 0;
+        font-size: 31px;
+    }
+
+    #footer .footer-reference {
+        flex-direction: column;
+        margin-top: 24px;
+    }
+
+    #footer .ref-heading {
+        font-size: 15px;
+    }
+
+    #footer ul li {
+        margin-bottom: 12px;
+    }
+
+    #footer ul li a {
+        font-size: 15px;
+
+    }
+
+    #footer .ref-container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    #footer .footer-socialmedia {
+        margin-top: 28px;
+    }
+}

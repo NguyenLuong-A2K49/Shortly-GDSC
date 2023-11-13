@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="./assets/css/style.css">
+        <link rel="stylesheet" href="./assets/css/responsive.css">
+        <link rel="stylesheet" href="./assets/font/themify-icons/themify-icons.css">
+        
+    </head>
+    <body>
+       <div id="main">
+            <div id="nav">
+                <a href=""><img src="./assets/images/logo.svg" alt="" class="nav-logo"></a>
+                <div class="menu-container" id="js-menu-container">
+                    <i class="ti-menu nav-menu" id="js-nav-menu" onclick="openMenu()"></i>
+                    <div class="nav-bar" id="js-nav-bar">
+                        <ul>
+                            <li><a href="">Features</a></li>
+                            <li><a href="">Pricing</a></li>
+                            <li><a href="">Resources</a></li>
+                        </ul>
+                        <div class="register-box">
+                            <a href="" class="login">Login</a>
+                            <a href="" class="sign-up">Sign Up</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="content">
+                <div id="introduction-container">
+                    <div class="introduction">
+                        <h1 class="intro-heading">
+                            More than just shorter links
+                        </h1>
+                        <p class="intro-subheading">
+                            Build your brand's recognition and get detailed
+                            insights on how your links are performing.
+                        </p>
+                        <button class="start-btn">
+                            <a href="" class="start">
+                                Get Started
+                            </a>
+                        </button>
+                    </div>
+                    <img src="./assets/images/illustration-working.svg" alt="" class="working-img">
+                </div>
+                
+                <div class="content-shorten">
+                    <div id="shorten-link">
+                        <div class="shorten-form" id="js-shorten-form">
+                            <form action="">
+                                <div class="input-box">
+                                    <input 
+                                        type="text"  
+                                        placeholder="Shorten a link here..." 
+                                        class="shorten-input"
+                                        id="js-shorten-input"
+                                    >
+                                    <p id="js-error-message" class="error-message"></p>
+                                </div>
+                                <button type="button" class="shorten-submit" onclick="validateForm()">Shorten It!</button>
+                            </form>
+                        </div>
+                        <div class="shorten-list" id="js-shorten-list"></div>
+                    </div>
+                    
+                    <div id="advanced-statistics">
+                        <div class="as-heading">Advanced Statistics</div>
+                        <div class="as-subheading">
+                            Track how your links are performing across the web with 
+                            our advanced statistics dashboard.
+                        </div>
+                        <div class="stat-box">
+                            <div class="stat-container col-3">
+                                <div class="linking-bar none-display"></div>
+                                <div class="stat-des ml-28">
+                                    <div class="stat-icon">
+                                        <img src="./assets/images/icon-brand-recognition.svg" alt="" style="display: block;">
+                                    </div>
+                                    <div class="stat-heading">Brand Recognition</div>
+                                    <div class="stat-title">
+                                        Boost your brand recognition with each click. Generic links
+                                        don't mean a thing. Branded links help instil confidence
+                                        in your content.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="stat-container col-3">
+                                <div class="linking-bar"></div>
+                                <div class="stat-des mt-116">
+                                    <div class="stat-icon">
+                                        <img src="./assets/images/icon-detailed-records.svg" alt="" style="display: block;">
+                                    </div>
+                                    <div class="stat-heading">Detailed Records</div>
+                                    <div class="stat-title">
+                                        Gain insights into who is clicking your links. Knowing when and where
+                                        people engage with your content helps inform better decisions.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="stat-container col-3">
+                                <div class="linking-bar"></div>
+                                <div class="stat-des mr-28 mt-72">
+                                    <div class="stat-icon" style="padding: 20px;">
+                                        <img src="./assets/images/icon-fully-customizable.svg" alt="" style="display: block;">
+                                    </div>
+                                    <div class="stat-heading">Fully Customizable</div>
+                                    <div class="stat-title">
+                                        Improve brand awareness and content discoverability through customizable
+                                        links, supercharging audience engagement.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <div class="linking-bar"></div> -->
+                    </div>
+                </div>
+
+                <div id="boost-links">
+                    <div class="bl-heading">Boost your links today</div>
+                    <button class="start-btn">
+                        <a href="" class="start">
+                            Get Started
+                        </a>
+                    </button>
+                </div>
+            </div>
+                
+            <div id="footer">
+                <div class="footer-logo">Shortly</div>
+                <div class="footer-reference">
+                    <div class="ref-container col-3">
+                        <div class="ref-heading">Features</div>
+                        <ul>
+                            <li><a href="">Link Shortening</a></li>
+                            <li><a href="">Branded Links</a></li>
+                            <li><a href="">Analytics</a></li>
+                        </ul>
+                    </div>
+                    <div class="ref-container col-3">
+                        <div class="ref-heading">Resources</div>
+                        <ul>
+                            <li><a href="">Blog</a></li>
+                            <li><a href="">Developers</a></li>
+                            <li><a href="">Support</a></li>
+                        </ul>
+                    </div>
+                    <div class="ref-container col-3">
+                        <div class="ref-heading">Company</div>
+                        <ul>
+                            <li><a href="">About</a></li>
+                            <li><a href="">Our Team</a></li>
+                            <li><a href="">Careers</a></li>
+                            <li><a href="">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <ul class="footer-socialmedia">
+                    <li><a href=""><i class="ti-facebook"></i></a></li>
+                    <li><a href=""><i class="ti-twitter"></i></a></li>
+                    <li><a href=""><i class="ti-pinterest"></i></a></li>
+                    <li><a href=""><i class="ti-instagram"></i></a></li>
+                </ul>
+            </div>
+       </div>
+       
+        <script>
+            function isLink(input) {
+                // Regular expression to match common URL patterns
+                var urlRegex = /^(ftp|http|https):\/\/[^ "]+$/;
+
+                // Test the input against the regex
+                return urlRegex.test(input);
+            }
+
+            function displayShortenedLinks() {
+                // localStorage.clear()
+                var storedLinks = JSON.parse(localStorage.getItem('storedLinks')) || [];
+                var tmpStoredLinks = [];
+                
+                var cnt = 0;
+                storedLinks.forEach(function(link) {
+                    cnt += 1;
+                    if (storedLinks.length - cnt < 3)
+                        tmpStoredLinks.push(link);
+                })
+                localStorage.setItem('storedLinks', JSON.stringify(tmpStoredLinks));
+
+                storedLinks = JSON.parse(localStorage.getItem('storedLinks')) || [];
+
+                var shortenList = document.getElementById('js-shorten-list');
+                shortenList.innerHTML = ''
+                storedLinks.forEach(function(link) {
+                    shortenList.innerHTML = link + shortenList.innerHTML;
+                })
+                // console.log(storedLinks.length);
+            } 
+
+            displayShortenedLinks();
+
+            function copyButtonEffect() {
+                copyBtns = document.querySelectorAll('.copy-btn');
+                    
+                copyBtns.forEach(copyBtn => {
+                    copyBtn.addEventListener('click', event => {
+                        copyBtn.textContent = 'Copied!'
+                        copyBtn.style.padding = '8px 20px'
+                        copyBtn.style.backgroundColor = 'var(--dark-violet)'
+                        
+                        var shortenedLink = event.target.previousElementSibling.textContent;
+                        
+                        var textarea = document.createElement('textarea');
+                        textarea.value = shortenedLink;
+
+                        document.body.appendChild(textarea);
+                        textarea.select();
+                        document.execCommand('copy');
+                        document.body.removeChild(textarea);
+                    })
+                });
+            }
+
+            copyButtonEffect();
+
+            function validateForm() {
+                var linkInput = document.getElementById('js-shorten-input');
+                var errorMessage = document.getElementById('js-error-message');
+                var shortenForm = document.getElementById('js-shorten-form');
+                var shortenList = document.getElementById('js-shorten-list');
+
+                if (isLink(linkInput.value) === false) {
+                    errorMessage.classList.add('showClass')
+                    shortenForm.style.padding = '50px 0px 18px'
+                    errorMessage.textContent = 'Please add a link';
+                    linkInput.style.border = 'hsl(0, 87%, 67%) solid 3px';
+                } else {
+                    errorMessage.classList.remove('showClass')
+                    shortenForm.style = ''
+                    errorMessage.textContent = '';
+                    linkInput.style = ''
+
+                    var apiEndpoint = 'https://owo.vc/api/v2/link';
+                    var shortenedLink = '';
+
+                    fetch(apiEndpoint, {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json',
+                        },
+                        body: JSON.stringify({
+                            "link": linkInput.value,
+                            "generator": "owo",
+                            "metadata": "OWOIFY"
+                        }),
+                    })
+                    .then(response => response.json())
+                    .then(data => {
+                        shortenedLink = data.id;
+                        console.log(shortenedLink);
+                        var savedLink = JSON.parse(localStorage.getItem('storedLinks')) || [];
+                        savedLink.push('<div class="copy-link"><div class="original-link">' + linkInput.value + '</div><div class="link-and-copy"><div class="shortened-link">https://' + shortenedLink + '</div><div class="copy-btn">Copy</div></div></div>');
+                        localStorage.setItem('storedLinks', JSON.stringify(savedLink));
+
+                        displayShortenedLinks();
+    
+                        copyButtonEffect();
+
+                        widthChange();
+    
+                        linkInput.value = ''
+                    })
+                    .catch(error => {
+                        console.error('Error:', error);
+                    });
+                }
+            }
+
+            function openMenu() {
+                var navBar = document.getElementById('js-nav-bar');
+                var navMenu = document.getElementById('js-nav-menu');
+
+                if (navBar.style.display === 'none' || navBar.style.display === '') {
+                    navBar.style.display = 'block';
+                } else {
+                    navBar.style.display = 'none';
+                }
+            }
+
+            var navBar = document.getElementById('js-nav-bar')
+            var navMenuContainer = document.getElementById('js-menu-container')
+            
+            function widthChange() {
+                // console.log(window.innerWidth);
+                if (window.innerWidth > 376) {
+                    navBar.style.display = 'flex'
+                    navMenuContainer.style.width = '100%'
+                } else {
+                    navBar.style.display = 'none'
+                    navMenuContainer.style.width = 'auto'
+                }
+            }
+
+            widthChange();
+            window.addEventListener('resize', widthChange);
+
+        </script>
+    </body>
+</html>
